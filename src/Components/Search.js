@@ -11,8 +11,8 @@ class SearchComponent extends Component {
           <Pressable
             style={styles.iconStyle}
             android_ripple={{color: '#ccc', borderless: true}}>
-            <Feather name="filter" size={23} />
-            <Text>Filter</Text>
+            <Feather name="filter" size={23} color="#777" />
+            <Text style={{color: '#777'}}>Filter</Text>
           </Pressable>
         </View>
       </View>
@@ -30,7 +30,7 @@ const styles = StyleSheet.create({
   },
   textInput: {
     width: '78%',
-    height: 45,
+    height: 38,
     fontSize: 15,
     marginStart: 10,
     borderRadius: 10,
