@@ -23,7 +23,6 @@ import {
   RestaurantCategoryData,
 } from '../Constants/Data';
 import navigationStrings from '../Constants/navigationStrings';
-import {useNavigation} from '@react-navigation/native';
 
 class Home extends Component {
   navigateTo(navigate) {
