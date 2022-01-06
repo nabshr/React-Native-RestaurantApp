@@ -6,12 +6,11 @@ import {
   TextInput,
   ScrollView,
   Keyboard,
-  Platform,
   KeyboardAvoidingView,
   TouchableWithoutFeedback,
 } from 'react-native';
 import ButtonComponent from '../Components/ButtonComponent';
-import {KeyboardAwareScrollView} from 'react-native-keyboard-aware-scroll-view';
+// import {KeyboardAwareScrollView} from 'react-native-keyboard-aware-scroll-view';
 
 class Loaction extends Component {
   render() {
@@ -21,26 +20,30 @@ class Loaction extends Component {
         style={styles.container}>
         <TouchableWithoutFeedback onPress={Keyboard.dismiss}>
           <View>
-            <Text style={styles.textView}>Name</Text>
-            <TextInput style={styles.textInput} placeholder="Name" />
-            <Text style={styles.textView}>Email</Text>
-            <TextInput
-              style={styles.textInput}
-              placeholder="Email"
-              keyboardType="email-address"
-            />
-            <Text style={styles.textView}>Contact No.</Text>
-            <TextInput
-              style={styles.textInput}
-              placeholder="Contact No."
-              keyboardType="phone-pad"
-            />
-            <Text style={styles.textView}>House No.</Text>
-            <TextInput
-              style={styles.textInput}
-              placeholder="House No."
-              keyboardType="numeric"
-            />
+            <ScrollView>
+              <View>
+                <Text style={styles.textView}>Name</Text>
+                <TextInput style={styles.textInput} placeholder="Name" />
+                <Text style={styles.textView}>Email</Text>
+                <TextInput
+                  style={styles.textInput}
+                  placeholder="Email"
+                  keyboardType="email-address"
+                />
+                <Text style={styles.textView}>Contact No.</Text>
+                <TextInput
+                  style={styles.textInput}
+                  placeholder="Contact No."
+                  keyboardType="phone-pad"
+                />
+                <Text style={styles.textView}>House No.</Text>
+                <TextInput
+                  style={styles.textInput}
+                  placeholder="House No."
+                  keyboardType="numeric"
+                />
+              </View>
+            </ScrollView>
             <View style={styles.buttonView}>
               <ButtonComponent
                 title="Search"

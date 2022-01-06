@@ -6,4 +6,5 @@ export default {
   MORE: 'More',
   TABS: 'Tabs',
   MAP: 'Search Locaiton',
+  HEATMAP: 'Heat Map',
 };
